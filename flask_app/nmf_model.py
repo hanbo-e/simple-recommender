@@ -70,7 +70,7 @@ def id_to_title(movie_ids: list) -> list:
     '''
     rec_titles = []
     for i in movie_ids:
-        rec_titles.append(TITLES.iloc[i][0])
+        rec_titles.append(TITLES.loc[i]['movie_title'])
     return rec_titles
 
 def user_to_df(user_input: dict):
